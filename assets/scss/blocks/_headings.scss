@@ -1,0 +1,22 @@
+.headings{
+
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__bg{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position:  center;
+
+            h5{
+                color: $white;
+            }
+
+        }
+        
+    }
+
+}

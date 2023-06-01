@@ -1,0 +1,16 @@
+.gallery{
+
+    &__image{
+        width: 100%;
+        margin-bottom: 15px;
+        height: 350px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+
+        &:hover, &focus{
+            transform: scale(1.5); 
+        }
+    }
+}

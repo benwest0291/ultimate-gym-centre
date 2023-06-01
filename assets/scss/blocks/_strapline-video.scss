@@ -1,0 +1,24 @@
+.strapline__video{
+    display: none;
+
+    @media(min-width: $md-lg-width){
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 50px;
+        display: block;
+        background-color: $red;
+    }
+     
+    h2{
+        color: $white;
+        margin-top: 100px;
+
+        @media(min-width: $md-lg-width){
+            margin-top: 80px;
+        }
+    }
+
+    button{
+        margin-top: 50px; 
+    }
+}

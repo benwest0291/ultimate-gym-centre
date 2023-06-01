@@ -1,0 +1,25 @@
+.fitness__coach__card{
+    box-shadow: 0px 20px 25px -2px rgba(0,0,0,0.2);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-bottom: red solid 4px;
+
+    &__info, &__image{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info{
+    background-color: $white;
+    padding-bottom: 30px;
+    }
+
+    &__facebook, &__twitter, &__insta, &__mail{
+        background-color: $white;
+        padding: 5px;
+        color: $grey;
+    }
+}

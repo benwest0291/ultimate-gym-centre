@@ -1,0 +1,16 @@
+.accreditations {
+
+    margin: 100px 0;
+
+    &__row{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media(min-width: $md-lg-width){
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+// Search overides
+
+#ajaxsearchlite1 .probox, div.asl_w .probox {
+    height: 38px !important;
+    background-color: #EFEFEF !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    font-size: 18px !important;
+
+    @media(min-width: $md-lg-width){
+        width: 70.5% !important;
+    }
+
+    ::placeholder{
+        font-size: 16px !important;
+        font-family: 'Montserrat', sans-serif !important;
+        color: $black !important;
+    }
+}
+
+#ajaxsearchlite1 .probox .proinput input, div.asl_w .probox .proinput input {
+    padding-top: 12px !important;
+}
+
+#ajaxsearchlite1 .probox, div.asl_w .probox{
+    padding: 0 !important;
+    height: 50px !important;
+}
+
+div.asl_m .probox .promagnifier .innericon{
+    height: 38px !important;
+}
+
+div.asl_w .probox .promagnifier .innericon svg{
+    background-color: $red;
+    fill: $white !important;
+    height: 100% !important;
+    height: 38px !important;
+}
+
+.promagnifier{
+    background-color: $red !important;
+    height: 38px !important;
+    width: 50px !important;
+   
+}
+
+div.asl_w .probox .promagnifier{
+    height: 100% !important;
+}
+
+.autocomplete{
+    display: none !important;
+}
+
+.proclose{
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+
+.asl_nores{
+    display: none !important;
+}
+
+.results{
+
+    width: 94% !important;
+
+    @media(min-width: $md-lg-width){
+        width: 70.5% !important;
+    }
+
+}
+
+#ajaxsearchliteres1{
+    width: 95% !important;
+
+    @media(min-width: $md-lg-width){
+        width:50% !important;
+    }
+}
+
+
+

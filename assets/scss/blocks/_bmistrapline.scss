@@ -1,0 +1,49 @@
+.bmi__strapline{
+    background-color: $black;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-position: right;
+
+    &__forms{
+        width: 100%;
+        #height, #weight{
+            width: 190%;
+        }
+   
+    @media(min-width: $md-lg-width){
+        width: 80%;
+
+        display: flex;
+        justify-content: space-between;
+
+        #height, #weight{
+            width: 150%;
+        }
+    }
+           
+    }
+
+    &__info{
+        padding-top: 50px;
+
+        h2{
+            color: $white;
+        }
+
+        p{
+            color: $lightGrey;
+        }
+       
+    }
+
+    &__results{
+        display: flex;
+        justify-content: space-between;
+        width: 150%;
+
+        @media(min-width: $md-lg-width){
+        width: 60%
+        }
+    }
+}
+

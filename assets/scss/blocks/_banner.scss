@@ -1,0 +1,11 @@
+.banner{
+    height: 350px;
+    background-color: $black;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__heading{
+        color: $white;
+        padding-top: 120px;
+    }
+}

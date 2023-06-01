@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&family=Poppins:wght@500;600;700&family=Roboto:wght@500&family=Smythe&display=swap');
+
+#wrapper {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+h3{
+    color: $black;
+    font-weight: 700;
+}
+
+h4{
+    color: $black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h5{
+    color: $black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+h6{
+    font-size: 15px;
+    color: $white;
+}
+
+P{
+    color: $grey;
+}
+
+.line{
+    padding: 2px;
+    background-color: $red;
+    width: 90px;
+}
+
+.fa-facebook-f, .fa-pinterest-p{
+    background-color: $lightGrey;
+    padding: 12px 15px;
+    color: $grey;
+    border-radius: 50%;
+}
+
+.fa-youtube, .fa-twitter{
+    background-color: $lightGrey;
+    padding: 12px;
+    color: $grey;
+    border-radius: 50%;
+}
+
+.text__color{
+    color: $red;
+}
+
+.pound{
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.per__month{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.red{
+    color: $red;
+}
+
+input, textarea {
+    background-color : $lightGrey;
+}
+
+.form-control{
+    background-color : $lightGrey;
+}
+
+
+//Block spacing
+
+.pricing__plans{
+margin-bottom: 120px;
+}
+
+.news__block{
+    margin-bottom: 100px;
+}
+
+.sprapline{
+    margin-bottom: 110px;
+}
+
+.base__footer{
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        color: $white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
