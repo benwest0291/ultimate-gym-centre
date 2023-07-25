@@ -5,6 +5,7 @@ $logo = get_theme_mod('company_logo');
 
 <!DOCTYPE html>
 <html lang=<?php language_attributes(); ?>>
+<!--Github deployment text -->
 
 <head>
     <meta charset="<?php bloginfo("charset"); ?>">
