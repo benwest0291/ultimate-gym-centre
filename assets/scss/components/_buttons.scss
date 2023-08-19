@@ -14,7 +14,6 @@
         border: $black 1px solid;
         color: $white
     }
-
 }
 
 .cta__btn{
@@ -107,8 +106,6 @@
     }
 }
 
-
-
 .bmi__btn{
     background-color: $grey;
     padding: 12px 20px;
@@ -133,11 +130,12 @@
     color: $black;
     border: solid 1px $grey;
     transition: .5s ease-in-out;
-    padding: 8px 32px;
+    padding: 8px 12px;
     font-weight: 900;
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
+    min-width: 125px;
 
     &:hover, &focus{
         background-color: $red;
@@ -153,12 +151,13 @@
     background-color: $darkGrey;
     border: solid 1px $darkGrey;
     color: $white;
-    padding: 15px 35px;
+    padding: 15px 15px;
     border-radius: 35px;
     transition: .5s ease-in-out;
     font-weight: 900;
     text-decoration: none;
     cursor: pointer;
+    min-width: 125px;
 
     &:hover, &focus{
         background-color: $red;

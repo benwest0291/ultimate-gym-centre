@@ -120,6 +120,8 @@ input, textarea {
 }
 .footer__list li {
   font-size: 15px;
+}
+.footer__list li a {
   color: #646464;
 }
 
@@ -246,11 +248,12 @@ input, textarea {
   color: #000;
   border: solid 1px #646464;
   transition: 0.5s ease-in-out;
-  padding: 8px 32px;
+  padding: 8px 12px;
   font-weight: 900;
   width: 100%;
   margin-bottom: 10px;
   text-align: center;
+  min-width: 125px;
 }
 .shedule__btn:hover, .shedule__btnfocus {
   background-color: #FF0336;
@@ -264,12 +267,13 @@ input, textarea {
   background-color: #595959;
   border: solid 1px #595959;
   color: #fff;
-  padding: 15px 35px;
+  padding: 15px 15px;
   border-radius: 35px;
   transition: 0.5s ease-in-out;
   font-weight: 900;
   text-decoration: none;
   cursor: pointer;
+  min-width: 125px;
 }
 .schedule__btn:hover, .schedule__btnfocus {
   background-color: #FF0336;
@@ -354,7 +358,8 @@ input, textarea {
 .navigation__logo {
   margin-top: 20px;
 }
-.navigation div ul {
+.navigation__links {
+  z-index: 200;
   padding-left: 0;
   margin-top: -80px;
   position: absolute;
@@ -371,11 +376,11 @@ input, textarea {
   padding-bottom: 400px;
   background-color: #FF0336;
 }
-@media (min-width: 754px) {
-  .navigation div ul {
-    display: flex;
+@media (min-width: 1100px) {
+  .navigation__links {
+    display: flex !important;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 30px;
     top: 0;
     height: 20px;
     position: relative;
@@ -388,30 +393,32 @@ input, textarea {
     margin-left: -20%;
   }
 }
-.navigation li {
-  list-style: none;
-}
-.navigation li a {
+.navigation__link a {
+  color: #fff !important;
   text-decoration: none;
   margin: 5px;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 600;
+  font-weight: 500;
+  transition: ease-in 0.5s;
+  cursor: pointer;
+  z-index: 300;
+  font-size: 35px;
 }
-@media (min-width: 754px) {
-  .navigation li a {
-    color: #fff;
-    font-weight: 600;
+@media (min-width: 1100px) {
+  .navigation__link a {
     font-size: 16px;
   }
+}
+.navigation__link a:hover, .navigation__link a:focus {
+  color: #FF0336;
 }
 .navigation__contact__btn {
   display: none;
 }
-@media (min-width: 754px) {
+@media (min-width: 1100px) {
   .navigation__contact__btn {
     display: block;
-    margin: 20px 0 0 130px;
+    margin: 20px 0 0 110px;
+    background-color: #000;
   }
 }
 .navigation__contact__btn__img {
@@ -421,15 +428,11 @@ input, textarea {
 .navigation__burger {
   display: block;
   z-index: 200;
-  margin-top: -50px;
+  top: 60px;
+  right: 25px;
   position: absolute;
 }
-@media (min-width: 450px) {
-  .navigation__burger {
-    margin-top: -100px;
-  }
-}
-@media (min-width: 754px) {
+@media (min-width: 1100px) {
   .navigation__burger {
     display: none;
   }
@@ -498,12 +501,12 @@ input, textarea {
 }
 @media (min-width: 754px) {
   .classes__card img {
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 .classes__card img:hover, .classes__card imgfocus {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .classes__card h3 {
   color: #fff;
@@ -1102,6 +1105,15 @@ div.asl_w .probox .promagnifier {
   .accreditations__row {
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.accreditations__image {
+  width: 75px;
+}
+@media (min-width: 754px) {
+  .accreditations__image {
+    width: 155px;
   }
 }
 

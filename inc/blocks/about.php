@@ -29,7 +29,7 @@ $image = $data["image"];
 
             <div class="col-12 col-md-6">
                 <?php if ($image != null) { ?>
-                    <img class="about__image" src="<?php echo $image['url']; ?>">
+                    <img class="about__image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                 <?php } ?>
             </div>
 

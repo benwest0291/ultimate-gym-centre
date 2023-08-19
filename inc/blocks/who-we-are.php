@@ -18,7 +18,7 @@ $mainImage = $data["main_image"];
 <section class="who__we__are">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
 
                 <?php if ($smallHeading != null) { ?>
                     <div class="who__we__are__sm__heading mb-2" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/red-title.svg" );>
@@ -37,7 +37,7 @@ $mainImage = $data["main_image"];
                 <div class="d-flex mt-5 who__we__are__section mb-5">
                     <div class="who__we__are__sections who__we__are__sections__border">
                         <?php if ($imageOne != null) { ?>
-                            <img src="<?php echo $imageOne['url']; ?>">
+                            <img src="<?php echo $imageOne['url']; ?>" alt="<?php echo $imageOne['alt']; ?>">
                         <?php } ?>
 
                         <?php if ($headingOne != null) { ?>
@@ -48,7 +48,7 @@ $mainImage = $data["main_image"];
                     <div class="who__we__are__sections who__we__are__sections__border">
 
                         <?php if ($imageTwo != null) { ?>
-                            <img src="<?php echo $imageTwo['url']; ?>">
+                            <img src="<?php echo $imageTwo['url']; ?>" alt="<?php echo $imageTwo['alt']; ?>">
                         <?php } ?>
 
                         <?php if ($headingTwo != null) { ?>
@@ -58,7 +58,7 @@ $mainImage = $data["main_image"];
 
                     <div class="who__we__are__sections">
                         <?php if ($imageThree != null) { ?>
-                            <img src="<?php echo $imageThree['url']; ?>">
+                            <img src="<?php echo $imageThree['url']; ?>" alt="<?php echo $imageThree['alt']; ?>">
                         <?php } ?>
 
                         <?php if ($headingThree != null) { ?>
@@ -69,13 +69,13 @@ $mainImage = $data["main_image"];
                 </div>
 
                 <?php if ($buttonText != null) { ?>
-                    <a class="who__we__are__btn mt-5" href="<?php echo $buttonUrl; ?>"><?php echo $buttonText; ?></a>
+                    <a title="<?php echo $buttonText; ?>" class="who__we__are__btn mt-5" href="<?php echo $buttonUrl; ?>"><?php echo $buttonText; ?></a>
                 <?php } ?>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
 
                 <?php if ($mainImage != null) { ?>
-                    <img class="who__we__are__image" src="<?php echo $mainImage['url']; ?>">
+                    <img class="who__we__are__image" src="<?php echo $mainImage['url']; ?>" alt="<?php echo $mainImage['alt']; ?>">
                 <?php } ?>
 
             </div>

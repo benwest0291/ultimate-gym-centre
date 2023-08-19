@@ -1,8 +1,8 @@
 <article class="main__article__card mt-3 mb-5">
-    <img class="main__article__card__image" src=" <?php echo the_post_thumbnail_url("post"); ?>">
+    <img class="main__article__card__image" src=" <?php echo the_post_thumbnail_url("post"); ?>" alt="article image">
 
     <div class="d-flex justify-content-between mt-2 main__article__card__info">
-        <img class="main__article__card__stack" src="<?php echo get_template_directory_uri(); ?>/assets/images/stack.png">
+        <img class="main__article__card__stack" src="<?php echo get_template_directory_uri(); ?>/assets/images/stack.png" alt="stack">
         <p>By <span class="main__article__card__author"> <?php echo get_the_author(); ?></span></p>
         <p><?php echo get_the_date(); ?></p>
     </div>
@@ -14,5 +14,5 @@
             echo wp_trim_words(get_the_content(), 30);
         }; ?>
     </p>
-    <a class="article__btn" href="<?php the_permalink(); ?>">VIEW ARTICLE</a>
+    <a title="<?php the_title(); ?>" class="article__btn" href="<?php the_permalink(); ?>">VIEW ARTICLE</a>
 </article>

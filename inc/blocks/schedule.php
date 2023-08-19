@@ -2,25 +2,25 @@
     <div class="container">
         <div class="row schedule__seven-cols">
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Monday</button>
+                <button class="shedule__btn js-day-selected w-100">Monday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Tuesday</button>
+                <button class="shedule__btn js-day-selected w-100">Tuesday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Wednesday</button>
+                <button class="shedule__btn js-day-selected w-100">Wednesday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Thursday</button>
+                <button class="shedule__btn js-day-selected w-100">Thursday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Friday</button>
+                <button class="shedule__btn js-day-selected w-100">Friday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Saturday</button>
+                <button class="shedule__btn js-day-selected w-100">Saturday</button>
             </div>
             <div class="col-12 col-md-1">
-                <button class="shedule__btn js-day-selected">Sunday</button>
+                <button class="shedule__btn js-day-selected w-100">Sunday</button>
             </div>
         </div>
 

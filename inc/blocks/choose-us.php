@@ -18,13 +18,13 @@ $buttonUrl = $data["choose_us_button_url"];
 <section class="choose__us">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <?php if ($youtubeVideo != null) { ?>
                     <div class="choose__us__video"><?php echo $youtubeVideo; ?></div>
                 <?php } ?>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <?php if ($smallHeading != null) { ?>
                     <div class="who__we__are__sm__heading mb-3 mt-5" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/red-title.svg" );>
                         <h5 class="mt-2"><?php echo $smallHeading; ?></h5>
@@ -42,7 +42,7 @@ $buttonUrl = $data["choose_us_button_url"];
                 <div class="choose__us__text__icons">
                     <div class="d-flex ">
                         <?php if ($iconOne != null) { ?>
-                            <img src="<?php echo $iconOne["url"]; ?>">
+                            <img src="<?php echo $iconOne["url"]; ?>" alt="<?php echo $iconOne["alt"]; ?>">
                         <?php } ?>
 
                         <?php if ($textOne != null) { ?>
@@ -52,7 +52,7 @@ $buttonUrl = $data["choose_us_button_url"];
 
                     <div class="d-flex">
                         <?php if ($iconTwo != null) { ?>
-                            <img src="<?php echo $iconTwo["url"]; ?>">
+                            <img src="<?php echo $iconTwo["url"]; ?>" alt="<?php echo $iconTwo["alt"]; ?>">
                         <?php } ?>
 
                         <?php if ($textTwo != null) { ?>
@@ -62,7 +62,7 @@ $buttonUrl = $data["choose_us_button_url"];
 
                     <div class="d-flex mt-3">
                         <?php if ($iconThree != null) { ?>
-                            <img src="<?php echo $iconThree["url"]; ?>">
+                            <img src="<?php echo $iconThree["url"]; ?>" alt="<?php echo $iconThree["alt"]; ?>">
                         <?php } ?>
 
                         <?php if ($textThree != null) { ?>
@@ -72,7 +72,7 @@ $buttonUrl = $data["choose_us_button_url"];
 
                     <div class="d-flex mt-3">
                         <?php if ($iconFour != null) { ?>
-                            <img src="<?php echo $iconFour["url"]; ?>">
+                            <img src="<?php echo $iconFour["url"]; ?>" alt="<?php echo $iconFour["alt"]; ?>">
                         <?php } ?>
 
                         <?php if ($textFour != null) { ?>
@@ -81,7 +81,7 @@ $buttonUrl = $data["choose_us_button_url"];
                     </div>
                 </div>
                 <?php if ($buttonText != null) { ?>
-                    <a href="<?php echo $buttonUrl ?>"><button class="who__we__are__btn mt-5 mb-5"><?php echo $buttonText; ?></button></a>
+                    <a title="<?php $buttonText; ?>" href="<?php echo $buttonUrl ?>"><button class="who__we__are__btn mt-5 mb-5"><?php echo $buttonText; ?></button></a>
                 <?php } ?>
             </div>
         </div>

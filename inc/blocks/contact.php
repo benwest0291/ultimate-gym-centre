@@ -29,21 +29,37 @@ if ($form != null) {
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="contact__infomation mt-4">
-                    <h2><?php echo $mainHeading; ?></h2>
-                    <p class="mt-4"><?php echo $mainParagrph; ?></p>
+                    <?php if ($mainHeading != null) { ?>
+                        <h2><?php echo $mainHeading; ?></h2>
+                    <?php } ?>
+
+                    <?php if ($mainParagrph != null) { ?>
+                        <p class="mt-4"><?php echo $mainParagrph; ?></p>
+                    <?php } ?>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="contact__infomation mt-4 pr-3">
-                        <h2 class="contact__small__heading"><?php echo $locationHeading; ?> </h2>
+                        <?php if ($locationHeading != null) { ?>
+                            <h2 class="contact__small__heading"><?php echo $locationHeading; ?> </h2>
+                        <?php } ?>
+
                         <div class="line"></div>
-                        <p class="mt-4 w-75"><?php echo $address; ?></p>
+
+                        <?php if ($address != null) { ?>
+                            <p class="mt-4 w-75"><?php echo $address; ?></p>
+                        <?php } ?>
                     </div>
 
                     <div class="contact__infomation mt-4"">
                         <h2 class=" contact__small__heading">Infomation</h2>
                         <div class="line mb-4"></div>
-                        <p><?php echo $phoneNumber; ?></p>
-                        <p><?php echo $email; ?></p>
+                        <?php if ($phoneNumber != null) { ?>
+                            <p><?php echo $phoneNumber; ?></p>
+                        <?php } ?>
+
+                        <?php if ($email != null) { ?>
+                            <p><?php echo $email; ?></p>
+                        <?php } ?>
                     </div>
                 </div>
 
@@ -87,19 +103,19 @@ if ($form != null) {
                         <div class="line"></div>
                         <div class="footer__socials mt-4">
                             <?php if ($facebook != null) { ?>
-                                <a href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a title="facebook link" href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook-f"></i></a>
                             <?php } ?>
 
                             <?php if ($twitter != null) { ?>
-                                <a href="<?php echo $twitter; ?>"><i class="fa-brands fa-twitter"></i></a>
+                                <a title="twitter link" href="<?php echo $twitter; ?>"><i class="fa-brands fa-twitter"></i></a>
                             <?php } ?>
 
                             <?php if ($pinterest != null) { ?>
-                                <a href="<?php echo $pinterest; ?>"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a title="pintrest link" href="<?php echo $pinterest; ?>"><i class="fa-brands fa-pinterest-p"></i></a>
                             <?php } ?>
 
                             <?php if ($youtube != null) { ?>
-                                <a href="<?php echo $youtube; ?>"><i class="fa-brands fa-youtube"></i></a>
+                                <a title="youtube link" href="<?php echo $youtube; ?>"><i class="fa-brands fa-youtube"></i></a>
                             <?php } ?>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ $serviceFive = get_field("service_five");
 ?>
 
 <div class="pricing__plans__card">
-    <img class="pricing__plans__card__image" src="<?php the_post_thumbnail_url("post"); ?>" />
+    <img class="pricing__plans__card__image" src="<?php the_post_thumbnail_url("post"); ?>" alt="pricing image" />
     <div class="d-flex justify-content-center">
         <div class="pricing__plans__card__container">
             <h5><?php the_title(); ?></h5>
@@ -33,8 +33,8 @@ $serviceFive = get_field("service_five");
                 <?php if ($serviceFive != null) { ?>
                     <li><?php echo $serviceFive; ?></li>
                 <?php } ?>
-                <a class="mt-2 article__btn" href="/class">VIEW CLASSES</a>
             </ul>
+            <a title="classes" class="mt-2 article__btn" href="<?php echo site_url('/classes');?>">VIEW CLASSES</a>
         </div>
     </div>
 </div>

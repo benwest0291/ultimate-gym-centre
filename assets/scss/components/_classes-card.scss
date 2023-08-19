@@ -15,12 +15,12 @@
         opacity: 0.9;
 
         @media(min-width: $md-lg-width){
-            max-width: 300px;
+            max-width: 400px;
         }
 
         &:hover, &focus{
             opacity: 1;
-            transform: scale(1.2); 
+            transform: scale(1.1);
         }
     }
 

@@ -37,10 +37,12 @@ add_action("wp_enqueue_scripts", "gym_site_files");
  */
 function gym_site_setup()
 {
-    register_nav_menu("headerMenu", "Header Menu");
-
-    add_theme_support("title-tag");
-    add_theme_support("post-thumbnails");
+    // Register navigation menus.
+    register_nav_menus(
+        array(
+            'header' => esc_html__('Header Menu', 'gym')
+        )
+    );
 }
 
 add_action("after_setup_theme", "gym_site_setup");

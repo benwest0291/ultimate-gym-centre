@@ -22,7 +22,7 @@ render_headings_block("pricing_page_headings");
                 $plans->the_post();
             ?>
                 <div class="col-12 col-md-4">
-                    <div class="testimonials__block__cards">
+                    <div class="testimonials__block__cards mb-5">
                         <?php get_template_part("inc/partials/pricing-plan-card"); ?>
                     </div>
                 </div>

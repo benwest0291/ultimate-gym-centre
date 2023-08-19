@@ -3,6 +3,6 @@
     <h3><?php the_title(); ?></h3>
     <p><?php the_excerpt(); ?></p>
     <div class="d-flex justify-content-end">
-        <img class="testimonials__card__thumbnail" src="<?php the_post_thumbnail_url("post"); ?>" />
+        <img class="testimonials__card__thumbnail" src="<?php the_post_thumbnail_url("post"); ?>" alt="testimonials thumbnail"/>
     </div>
 </div>

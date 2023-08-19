@@ -13,13 +13,13 @@ while (have_posts()) {
                     <h2 class="mt-5"><?php the_title(); ?></h2>
                     <div class="line"></div>
                     <div class="d-flex justify-content-between mt-3 main__article__card__info__single">
-                        <img class="main__article__card__stack" src="<?php echo get_template_directory_uri(); ?>/assets/images/stack.png">
+                        <img class="main__article__card__stack" src="<?php echo get_template_directory_uri(); ?>/assets/images/stack.png" alt="stack">
                         <p>By <span class="main__article__card__author"><?php the_author(); ?></span></p>
                         <p><?php echo get_the_date(); ?></p>
                     </div>
 
                     <p class="w-75 mt-3"><?php the_content(); ?></p>
-                    <img class="main__article__card__image mt-4" src=" <?php echo the_post_thumbnail_url("post"); ?>">
+                    <img class="main__article__card__image mt-4" src=" <?php echo the_post_thumbnail_url("post"); ?>" alt="article image">
 
                     <h5 class="mt-4">SHARE THIS PAGE</h5>
                     <div class="line"></div>
@@ -28,7 +28,7 @@ while (have_posts()) {
                             <i class="fa-brands fa-facebook-f"></i>
                             <i class="fa-brands fa-twitter"></i>
                             <i class="fa-brands fa-pinterest-p"></i>
-                            <i class="fa-brands fa-youtube"></i></a>
+                            <i class="fa-brands fa-youtube"></i>
                         </div>
                     </div>
                 </div>

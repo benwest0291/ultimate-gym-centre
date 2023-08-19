@@ -16,19 +16,19 @@ $mastheadButtonUrl = $data["masthead_button_url"];
         <div class="d-flex justify-content-end masthead__socials">
             <div class="d-flex flex-column">
                 <h5 class="masthead__share">SHARE</h5>
-                <img class="masthead__line" src="<?php echo get_template_directory_uri(); ?>/assets/images/line.png">
+                <img class="masthead__line" src="<?php echo get_template_directory_uri(); ?>/assets/images/line.png" alt="line">
                 <div class="d-flex justify-content-end">
                     <div class="d-flex flex-column mt-1 masthead__lower__social">
                         <?php if ($linkedin != null) { ?>
-                            <a href="<?php echo $linkedin; ?>"><i class="masthead__linkedin fa-brands fa-linkedin-in"></i></a>
+                            <a title="linkedin" href="<?php echo $linkedin; ?>"><i class="masthead__linkedin fa-brands fa-linkedin-in"></i></a>
                         <?php } ?>
 
                         <?php if ($twitter != null) { ?>
-                            <a href="<?php echo $twitter; ?>"><i class="masthead__twitter fa-brands fa-twitter"></i></a>
+                            <a title="twitter" href="<?php echo $twitter; ?>"><i class="masthead__twitter fa-brands fa-twitter"></i></a>
                         <?php } ?>
 
                         <?php if ($facebook != null) { ?>
-                            <a href="<?php echo $facebook; ?>"><i class="masthead__facebook fa-brands fa-facebook"></i></a>
+                            <a title="facebook" href="<?php echo $facebook; ?>"><i class="masthead__facebook fa-brands fa-facebook"></i></a>
                         <?php } ?>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ $mastheadButtonUrl = $data["masthead_button_url"];
         <div class="row masthead__pull__up">
             <div class="col-12 col-md-6">
                 <?php if ($mastheadBgImage != null) { ?>
-                    <img class="masthead__image" src="<?php echo $mastheadBgImage['url']; ?>">
+                    <img class="masthead__image" src="<?php echo $mastheadBgImage['url']; ?>" alt="<?php echo $mastheadBgImage['alt']; ?>">
                 <?php } ?>
             </div>
             <div class="col-12 col-md-6">
@@ -57,7 +57,7 @@ $mastheadButtonUrl = $data["masthead_button_url"];
                     <?php } ?>
 
                     <?php if ($mastheadButton != null) { ?>
-                        <a class=" masthead__btn mt-5" href="<?php echo $mastheadButtonUrl ?>"><?php echo $mastheadButton; ?></a>
+                        <a title="<?php echo $mastheadButton; ?>" class="masthead__btn mt-5" href="<?php echo $mastheadButtonUrl ?>"><?php echo $mastheadButton; ?></a>
                     <?php } ?>
                 </div>
             </div>

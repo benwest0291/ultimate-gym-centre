@@ -24,7 +24,7 @@ $footerText = get_theme_mod("text");
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
-                <a href="<?php echo site_url("/") ?>"><img class="footer__logo mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.png" /></a>
+                <a title="homepage" href="<?php echo site_url("/") ?>"><img class="footer__logo mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.png" alt="logo" /></a>
 
                 <?php if ($footerText != null) { ?>
                     <p class="footer__text"><?php echo $footerText; ?></p>
@@ -32,19 +32,19 @@ $footerText = get_theme_mod("text");
 
                 <div class="footer__socials mt-3">
                     <?php if ($facebook != null) { ?>
-                        <a href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a title="facebook" href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook-f"></i></a>
                     <?php } ?>
 
                     <?php if ($twitter != null) { ?>
-                        <a href="<?php echo $twitter; ?>"><i class="fa-brands fa-twitter"></i></a>
+                        <a title="twiiter" href="<?php echo $twitter; ?>"><i class="fa-brands fa-twitter"></i></a>
                     <?php } ?>
 
                     <?php if ($pinterest != null) { ?>
-                        <a href="<?php echo $pinterest; ?>"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a title="pintrest" href="<?php echo $pinterest; ?>"><i class="fa-brands fa-pinterest-p"></i></a>
                     <?php } ?>
 
                     <?php if ($youtube != null) { ?>
-                        <a href="<?php echo $youtube; ?>"><i class="fa-brands fa-youtube"></i></a>
+                        <a title="youtube"  href="<?php echo $youtube; ?>"><i class="fa-brands fa-youtube"></i></a>
                     <?php } ?>
                 </div>
                 <p class="mt-3">Private Policy | © 2023 Gym</p>
@@ -65,9 +65,7 @@ $footerText = get_theme_mod("text");
                     while ($classes->have_posts()) {
                         $classes->the_post();
                     ?>
-                        <a class="text-decoration-none" href="<?php the_permalink() ?>">
-                            <li class="mt-1"><?php echo the_title(); ?></li>
-                        </a>
+                        <li class="mt-1 color-grey"> <a title="<?php echo the_title(); ?>" class="text-decoration-none" href="<?php the_permalink() ?>"><?php echo the_title(); ?></a></li>
                     <?php
                     }
                     wp_reset_postdata();

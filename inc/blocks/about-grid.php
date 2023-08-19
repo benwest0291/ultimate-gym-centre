@@ -17,7 +17,7 @@ $aboutGridImageTwo = $data["about_main_image_two"];
             <div class="col-12 col-md-6">
                 <div class="about__grid__info">
                     <?php if ($aboutGridIconOne != null) { ?>
-                        <img class="about__grid__icon mb-3" src="<?php echo $aboutGridIconOne["url"]; ?>">
+                        <img class="about__grid__icon mb-3" src="<?php echo $aboutGridIconOne["url"]; ?>" alt="<?php echo $aboutGridIconOne["alt"]; ?>">
                     <?php } ?>
 
                     <?php if ($aboutGridHeadingOne != null) { ?>
@@ -32,18 +32,18 @@ $aboutGridImageTwo = $data["about_main_image_two"];
 
             <div class="col-12 col-md-6">
                 <?php if ($aboutGridImageOne != null) { ?>
-                    <img class="about__grid__main__image" src="<?php echo $aboutGridImageOne["url"]; ?> ">
+                    <img class="about__grid__main__image" src="<?php echo $aboutGridImageOne["url"]; ?>" alt="<?php echo $aboutGridImageOne["alt"]; ?>">
                 <?php } ?>
             </div>
 
             <div class="col-12 col-md-6">
-                <img class="about__grid__main__image" src="<?php echo $aboutGridImageTwo["url"]; ?> ">
+                <img class="about__grid__main__image" src="<?php echo $aboutGridImageTwo["url"]; ?>" alt="<?php echo $aboutGridImageTwo["alt"]; ?> ">
             </div>
 
             <div class="col-12 col-md-6">
                 <div class="about__grid__info">
                     <?php if ($aboutGridIconTwo != null) { ?>
-                        <img class="about__grid__icon mb-3" src="<?php echo $aboutGridIconTwo["url"]; ?>">
+                        <img class="about__grid__icon mb-3" src="<?php echo $aboutGridIconTwo["url"]; ?>" alt="<?php echo $aboutGridIconTwo["alt"]; ?>">
                     <?php } ?>
 
                     <?php if ($aboutGridHeadingTwo != null) { ?>

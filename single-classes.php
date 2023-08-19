@@ -16,7 +16,7 @@ $coaches = get_field("coach_taking_class");
                 <?php } ?>
                 <p class="mb-5"><?php echo the_content(); ?></p>
                 <div class="mt-5">
-                    <a href="/schedule" class="article__btn">BOOK NOW</a>
+                    <a title="book now" href="<?php echo site_url('/schedule');?>" class="article__btn">BOOK NOW</a>
                 </div>
 
                 <div class="classes__image__grid mt-5 mb-5">
@@ -25,7 +25,7 @@ $coaches = get_field("coach_taking_class");
                         while (have_rows("class_images")) : the_row();
                             $image = get_sub_field("image");
                     ?>
-                            <img class="m-2 classes__image__grid__image" src="<?php echo $image['url']; ?>">
+                            <img class="m-2 classes__image__grid__image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                     <?php
                         endwhile;
                     endif;
@@ -39,7 +39,7 @@ $coaches = get_field("coach_taking_class");
                     foreach ($coaches as $coach) { ?>
                         <div class="classes__coach__card mt-5" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/trainer-background.png" );>
                             <div class="fitness__coach__card__image">
-                                <img src="<?php echo get_the_post_thumbnail_url($coach) ?>" />
+                                <img src="<?php echo get_the_post_thumbnail_url($coach) ?>" alt="coach" />
                             </div>
                             <div class="fitness__coach__card__info pt-4">
                                 <h6> Your Coach </h6>
@@ -48,9 +48,9 @@ $coaches = get_field("coach_taking_class");
                             </div>
                         </div>
                     <?php } ?>
+                </div>
             </div>
-        </div>
-    <?php } ?>
+        <?php } ?>
     </div>
 </section>
 

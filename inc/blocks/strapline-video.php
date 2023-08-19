@@ -16,7 +16,7 @@ $straplineButtonUrl = $data["strapline_button_url"];
                 </div>
                 <div class="col-12 col-md-6 mt-5">
                     <?php if ($straplineButtonText != null) { ?>
-                        <a class="strapline__btn" href="<?php echo $straplineButtonUrl ?> ?>"><?php echo $straplineButtonText; ?></a>
+                        <a title="<?php echo $straplineButtonText; ?>" class="strapline__btn" href="<?php echo $straplineButtonUrl ?> ?>"><?php echo $straplineButtonText; ?></a>
                     <?php } ?>
                 </div>
             </div>

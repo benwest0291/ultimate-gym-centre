@@ -23,7 +23,7 @@ render_headings_block("classes_homepage_heading");
             while ($classes->have_posts()) {
                 $classes->the_post();
             ?>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="classes__block_cards">
                         <?php get_template_part("inc/partials/classes-card"); ?>
                     </div>
@@ -91,7 +91,7 @@ render_headings_block("testimonials_homepage");
             while ($testimonials->have_posts()) {
                 $testimonials->the_post();
             ?>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-xl-4">
                     <div class="testimonials__block__cards">
                         <?php get_template_part("inc/partials/testimonial-card"); ?>
                     </div>
@@ -127,7 +127,7 @@ render_headings_block("training_plans_headings_homepage");
             while ($plans->have_posts()) {
                 $plans->the_post();
             ?>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <div class="testimonials__block__cards">
                         <?php get_template_part("inc/partials/pricing-plan-card"); ?>
                     </div>
@@ -159,7 +159,7 @@ render_headings_block("news_headings_homepage");
             while ($news->have_posts()) {
                 $news->the_post();
             ?>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <div class="testimonials__block__cards">
                         <?php get_template_part("inc/partials/news-card"); ?>
                     </div>

@@ -11,6 +11,15 @@
         @media(min-width: $md-lg-width){
             justify-content: space-between;
             flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__image{
+        width: 75px;
+
+        @media(min-width: $md-lg-width){
+            width: 155px;
         }
     }
 }

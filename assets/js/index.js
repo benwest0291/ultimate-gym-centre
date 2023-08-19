@@ -3,7 +3,7 @@
 const burger = document.querySelector(".navigation__burger");
 
 const navSlide = () => {
-        const nav = document.querySelector(".menu");
+        const nav = document.querySelector(".navigation__links");
         nav.classList.toggle("nav-active");
         burger.classList.toggle("toggle");
     }
@@ -71,7 +71,7 @@ const fetchClasses = (dayToSearch) => {
                         <h5>${info.coach[0].post_title}</h5>
                     </div>
                     <div class="col-12 col-md-2 mt-4 mb-4 schedule__class">
-                        <a href="/contact" class="schedule__btn w-100text-cemter">Join Now</a>
+                        <a href="/contact" class="schedule__btn w-100 text-cemter">Join Now</a>
                     </div>
                 </div>
             </div>`

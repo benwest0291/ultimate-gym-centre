@@ -45,8 +45,8 @@ $promoPoster = get_field("promotion_poster");
                         while ($classes->have_posts()) {
                             $classes->the_post();
                         ?>
-                            <a class="text-decoration-none" href="<?php echo the_permalink(); ?>">
-                                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/chevron.png"><?php the_title(); ?></li>
+                            <a title="<?php the_title(); ?>" class="text-decoration-none" href="<?php echo the_permalink(); ?>">
+                                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/chevron.png" alt="chevron"><?php the_title(); ?></li>
                             </a>
                         <?php
                         }
@@ -74,7 +74,7 @@ $promoPoster = get_field("promotion_poster");
                         ?>
                     </div>
                     <?php if ($promoPoster != null) { ?>
-                        <img class="mt-5 w-100" src="<?php echo $promoPoster["url"]; ?>">
+                        <img class="mt-5 w-100" src="<?php echo $promoPoster["url"]; ?>" alt="<?php echo $promoPoster["alt"]; ?>">
                     <?php } ?>
                 </div>
             </div>

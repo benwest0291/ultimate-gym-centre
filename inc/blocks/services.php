@@ -17,10 +17,10 @@ $serviceParagraphThree = $data["service_three_paragraph"];
 <section class="services">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-lg-4">
                 <div class="services__card mb-4">
                     <?php if ($serviceImageOne != null) { ?>
-                        <img class="mb-3" src="<?php echo $serviceImageOne['url']; ?>">
+                        <img class="mb-3" src="<?php echo $serviceImageOne['url']; ?>" alt="<?php echo $serviceImageOne['alt']; ?>">
                     <?php } ?>
 
                     <?php if ($serviceHeadingOne != null) { ?>
@@ -33,10 +33,10 @@ $serviceParagraphThree = $data["service_three_paragraph"];
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-lg-4 mb-4">
                 <div class="services__card">
                     <?php if ($serviceImageTwo != null) { ?>
-                        <img class="mb-3" src="<?php echo $serviceImageTwo['url']; ?>">
+                        <img class="mb-3" src="<?php echo $serviceImageTwo['url']; ?>" alt="<?php echo $serviceImageTwo['alt']; ?>">
                     <?php } ?>
 
                     <?php if ($serviceHeadingTwo != null) { ?>
@@ -49,10 +49,10 @@ $serviceParagraphThree = $data["service_three_paragraph"];
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-lg-4 mb-4">
                 <div class="services__card">
                     <?php if ($serviceImageThree != null) { ?>
-                        <img class="mb-3" src="<?php echo $serviceImageThree['url']; ?>">
+                        <img class="mb-3" src="<?php echo $serviceImageThree['url']; ?>" alt="<?php echo $serviceImageThree['alt']; ?>">
                     <?php } ?>
 
                     <?php if ($serviceHeadingThree != null) { ?>
