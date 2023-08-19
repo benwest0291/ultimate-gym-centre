@@ -4,15 +4,14 @@ $logo = get_theme_mod('company_logo');
 ?>
 
 <!DOCTYPE html>
-<html lang=<?php language_attributes(); ?>>
-<!--Github deployment text -->
-
+<html lang="<?php echo language_attributes(); ?>">
 <head>
     <meta charset="<?php bloginfo("charset"); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
     <title><?php bloginfo(the_title()); ?>"</title>
+    <meta name="theme-color" content="#000000">
 </head>
 
 <body <?php body_class(); ?>>

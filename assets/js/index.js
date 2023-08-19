@@ -48,7 +48,7 @@ burger.addEventListener("click", navSlide);
    // Fetch classes
 
 const fetchClasses = (dayToSearch) => { 
-    fetch(`http://gym.local/wp-json/wp/v2/schedule?search=${dayToSearch}`) 
+    fetch(`${gymData.root_url}/wp-json/wp/v2/schedule?search=${dayToSearch}`)
     .then((response) => response.json())
     .then((data) => {
 
